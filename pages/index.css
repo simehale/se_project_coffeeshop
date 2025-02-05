@@ -139,6 +139,7 @@
 
 .header__footer_address {
   margin: 0;
+  text-align: end;
 }
 
 .content {
