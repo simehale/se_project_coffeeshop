@@ -219,3 +219,56 @@
 .recipes__video_length {
   margin: 0;
 }
+
+.reservation {
+  background-color: #d9e7ff;
+  background-image: url(/images/background_reservation.svg);
+  margin: 0;
+}
+
+.reservation__title {
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.reservation__form {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  margin-bottom: 120px;
+}
+
+.form__fieldset {
+  border: none;
+}
+
+.form__label {
+  display: block;
+}
+
+.form__input {
+}
+
+.form__button {
+  border-radius: 4px;
+  background-color: #1878dc;
+  color: #fff;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form__checkbox {
+  border-radius: 2px;
+  background-color: #1878dc;
+  background-image: url(/images/check.svg);
+  color: #fff;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
