@@ -1,18 +1,16 @@
-.page {
-  min-width: 1100px;
-  max-width: 1600px;
-  background-color: white;
-  font-family: "Inter", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  margin: auto;
-}
+@import url(/blocks/page.css);
+@import url(/blocks/header.css);
+@import url(/blocks/nav.css);
+@import url(/blocks/content.css);
+@import url(/blocks/recipes.css);
+@import url(/blocks/reservation.css);
+@import url(/blocks/form.css);
 
-.header {
+.menu {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-image: url(/images/background_header.svg);
+  background-image: url(/images/background_menu.svg);
   background-color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,300 +19,44 @@
   position: relative;
 }
 
-.nav {
+.menu__title {
   display: flex;
-  justify-content: space-between;
-  align-items: start;
-  margin: 0 80px 0 30px;
-  padding-top: 30px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.nav__logo {
-  display: flex;
-  width: 105px;
-  height: 39px;
-}
-
-.nav__links {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  gap: 20px;
-  list-style: none;
-}
-
-.nav__link {
-  text-decoration: none;
-  color: black;
-}
-
-.header__span-accent {
-  display: block;
-  margin: auto;
-  margin-top: 183px;
-  max-width: 729px;
-  font-family: "Noto Serif", serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 72px;
-  color: #3f96f3;
-}
-
-.header__title {
-  margin: 0;
-  max-width: 729px;
-  margin-left: 80px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 60px;
-  line-height: 72px;
-  letter-spacing: -0.6px;
-}
-
-.header__description {
-  max-width: 620px;
-  margin-top: 28px;
-  margin-left: 80px;
-  font-family: "Noto Serif";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.header__image {
-  z-index: 1;
-  width: 646px;
-  height: 568px;
-  position: absolute;
-  top: 124px;
-  right: 5px;
-}
-
-.header__footer {
-  margin-top: auto;
-  width: 100%;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #6f6f6f;
-}
-
-.header__paragraph {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  display: flex;
-  font-weight: 500;
-  padding: 0 80px 40px 80px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #6f6f6f;
-}
-
-.header__footer_list {
-  list-style: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.header__footer_list-item {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.header__footer_address {
-  margin: 0;
-  text-align: end;
-}
-
-.content {
-}
-
-.recipes {
-  display: flex;
-  flex-direction: column;
-  background-image: url(/images/background_recipes.svg);
-  background-color: #0a2750;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #fff;
-}
-
-.recipes__title {
+  justify-content: center;
   margin-top: 100px;
-  margin-left: 80px;
   margin-bottom: 0;
-  max-width: 580px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 44px;
-  line-height: 52px;
 }
 
-.recipes__subtitle {
+.menu__subtitle {
+  text-align: center;
+  justify-content: center;
   margin-top: 24px;
-  margin-left: 80px;
   margin-bottom: 0;
-  max-width: 438px;
-  font-family: "Noto Serif";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
 }
 
-.recipes__videos {
+.menu__cards {
+  margin-top: 100px;
   display: flex;
   justify-content: center;
-  margin-top: 80px;
-  gap: 40px;
-  margin-bottom: 215px;
+  flex-wrap: wrap;
 }
 
-.recipes__video {
-  display: block;
-  gap: 0;
-  justify-items: center;
+.card {
+  display: flex column;
+  gap: 100px;
 }
 
-.recipes__iframe {
-  width: 480px;
-  height: 273px;
-  margin-bottom: 0;
-  border: 0;
+.card__title {
 }
 
-.recipes__video-caption {
-  display: flex;
-  justify-content: space-between;
-  width: 480px;
-  margin-top: 24px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
+.card__list {
+  list-style: none;
+  padding-left: 0;
 }
 
-.recipes__video_subtitle {
-  margin: 0;
+.card__list-item {
+  margin-top: 16px;
 }
 
-.recipes__video_length {
-  margin: 0;
-}
-
-.reservation {
-  background-color: #d9e7ff;
-  background-image: url(/images/background_reservation.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin: 0;
-  justify-items: center;
-}
-
-.reservation__title {
-  margin: 0;
-  padding-top: 100px;
-  padding-bottom: 80px;
-  justify-content: center;
-  color: #000;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 44px;
-  line-height: 52px;
-}
-
-.reservation__form {
-  justify-items: center;
-}
-
-.form__fieldset {
-  border: none;
-  margin-bottom: 32px;
-  margin-top: 0;
-  padding: 0;
-}
-
-.form__fieldset:last-child {
-  padding-bottom: 120px;
-  margin-bottom: 0;
-}
-
-.form__label {
-  display: block;
-  margin-bottom: 8px;
-  color: #000;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.form__label:last-child {
-  margin-bottom: 0;
-}
-
-.form__input {
-  padding: 15px 20px;
-  color: #838383;
-  width: 385px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.form__button {
-  border-radius: 4px;
-  background-color: #1878dc;
-  color: #fff;
-  border: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 430px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  transition: background-color 0.4s;
-}
-
-.form__button:hover {
-  background-color: #3f96f3;
-}
-
-.form__checkbox {
-  border-radius: 2px;
-  background-color: #1878dc;
-  background-image: url(/images/check.svg);
-  color: #fff;
-  border: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  margin-right: 12px;
+.card__list-item:first-child {
+  margin-top: 32px;
 }
