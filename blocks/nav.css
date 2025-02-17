@@ -29,3 +29,16 @@
   text-decoration: none;
   color: black;
 }
+
+.nav__link:hover {
+  animation: fade 0.4s ease forwards;
+}
+
+@keyframes fade {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 50%;
+  }
+}

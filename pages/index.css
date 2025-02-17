@@ -1,3 +1,4 @@
+@import url(/vendor/normalize.css);
 @import url(/blocks/page.css);
 @import url(/blocks/header.css);
 @import url(/blocks/nav.css);
@@ -5,97 +6,6 @@
 @import url(/blocks/recipes.css);
 @import url(/blocks/reservation.css);
 @import url(/blocks/form.css);
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  height: 100vh;
-  background-image: url(/images/background_menu.svg);
-  background-color: #fff;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  max-height: 800px;
-  align-items: center;
-}
-
-.menu__title {
-  display: flex;
-  margin: 0;
-  max-width: 780px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 44px;
-  line-height: 52px;
-}
-
-.menu__subtitle {
-  display: flex;
-  text-align: center;
-  margin-top: 24px;
-  margin-bottom: 0;
-  max-width: 780px;
-  font-family: "Noto Serif";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.menu__cards {
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 100px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 540px;
-}
-
-.card__title {
-  margin: 0;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.card__list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-  width: 100%;
-  font-family: "Noto Serif";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.card__list-item {
-  display: flex;
-  margin-top: 16px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.card__list-item:first-child {
-  margin-top: 32px;
-}
-
-.card__list-divider {
-  flex-grow: 1;
-  border-bottom: 1px solid #6f6f6f;
-  height: 14.5px;
-  margin-right: 5px;
-  margin-left: 5px;
-}
+@import url(/blocks/menu.css);
+@import url(/blocks/about.css);
+@import url(/blocks/footer.css);

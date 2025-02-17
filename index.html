@@ -14,7 +14,6 @@
     />
     <title>Coffee Shop</title>
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -290,9 +289,63 @@
             </div>
           </div>
         </section>
-        <section class="about" id="about"></section>
+        <section class="about" id="about">
+          <h2 class="about__title">About the coffee shop</h2>
+          <div class="about__circle"></div>
+          <div class="about__circle_animation_blurred"></div>
+          <div class="about__content">
+            <p class="about__paragraph">
+              Our coffee shop is located in the Triple Peaks Library. It
+              features 6 tables and free WiFi.
+            </p>
+            <p class="about__paragraph">
+              Our main mission is keeping guests cozy and energized.
+            </p>
+            <p class="about__paragraph">
+              Besides that, we try to reduce our environmental impact — so we
+              don't sell single-use cups. But you can buy one of our reusable
+              cups!
+            </p>
+          </div>
+        </section>
       </main>
-      <footer class="footer" id="footer"></footer>
+      <footer class="footer" id="footer">
+        <div class="footer__columns">
+          <div class="footer__column">
+            <img
+              class="footer__logo"
+              src="images/logo_coffeeshop_light.svg"
+              alt="White Triple Ten Logo"
+            />
+          </div>
+          <div class="footer__column footer__column_content_social">
+            <h3 class="footer__column-heading">Social media</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__column-link">
+                  <img
+                    class="footer__social-icon"
+                    src="images/facebook_white.svg"
+                    alt="Facebook icon"
+                  />
+                  Facebook
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__column-link">
+                  <img
+                    class="footer__social-icon"
+                    src="images/instagram_white.svg"
+                    alt="Instagram icon"
+                  />
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">© 2025 Simeon Haley</p>
+      </footer>
     </div>
   </body>
 </html>
