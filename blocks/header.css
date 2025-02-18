@@ -8,7 +8,10 @@
   background-repeat: no-repeat;
   background-position: center;
   max-height: 800px;
+  min-height: 720px;
+  box-sizing: border-box;
   position: relative;
+  min-width: 1388px;
 }
 
 .header__span-accent {
@@ -49,7 +52,7 @@
 
 .header__image {
   z-index: 1;
-  width: 646px;
+  max-width: 646px;
   height: 568px;
   position: absolute;
   top: 124px;
