@@ -13,6 +13,7 @@
       content="Espresso, baked goods, cozy, reusable cups, biodegradable, coffee shop, study, recipes"
     />
     <title>Coffee Shop</title>
+    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,9 +21,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap"
       rel="stylesheet"
     />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@1,100..900&display=swap");
-    </style>
   </head>
   <body>
     <div class="page">
@@ -62,26 +60,26 @@
           class="header__image"
         />
         <div class="header__footer">
-          <div class="header__paragraph">
+          <div>
             <ul class="header__footer header__footer_list">
               <li>
-                <p class="header__footer header__footer_list-item">Hours:</p>
+                <p class="header__paragraph">Hours:</p>
               </li>
               <li>
-                <p class="header__footer header__footer_list-item">
+                <p class="header__paragraph">
                   Monday &ndash; Friday (10:00 &ndash; 19:00)
                 </p>
               </li>
               <li>
-                <p class="header__footer header__footer_list-item">
+                <p class="header__paragraph">
                   Saturday &ndash; Sunday (11:00 &ndash; 18:00)
                 </p>
               </li>
             </ul>
-            <p class="header__footer header__footer_address">
-              200 Success Avenue, The Town of Triple Peaks
-            </p>
           </div>
+          <p class="header__paragraph">
+            200 Success Avenue, The Town of Triple Peaks
+          </p>
         </div>
       </header>
       <main class="content">
@@ -102,11 +100,9 @@
                 allowfullscreen
               >
               </iframe>
-              <div class="recipes__video recipes__video-caption">
-                <p class="recipes__video recipes__video_subtitle">
-                  Aeropress recipe
-                </p>
-                <p class="recipes__video recipes__video_length">~5 min</p>
+              <div class="recipes__video-caption">
+                <p class="recipes__video_subtitle">Aeropress recipe</p>
+                <p class="recipes__video_length">~5 min</p>
               </div>
             </div>
             <div class="recipes__video">
@@ -119,18 +115,16 @@
                 allowfullscreen
               >
               </iframe>
-              <div class="recipes__video recipes__video-caption">
-                <p class="recipes__video recipes__video_subtitle">
-                  French press recipe
-                </p>
-                <p class="recipes__video recipes__video_length">~3 min</p>
+              <div class="recipes__video-caption">
+                <p class="recipes__video_subtitle">French press recipe</p>
+                <p class="recipes__video_length">~3 min</p>
               </div>
             </div>
           </div>
         </section>
         <section class="reservation" id="reservation">
           <h2 class="reservation__title">Book a table</h2>
-          <form class="form reservation__form">
+          <form class="reservation__form form">
             <fieldset class="form__fieldset">
               <label for="name" class="form__label">Name *</label>
               <input
@@ -140,8 +134,6 @@
                 placeholder="Name Surname"
                 required
               />
-            </fieldset>
-            <fieldset class="form__fieldset">
               <label for="number-of-guests" class="form__label"
                 >Number of guests *</label
               >
@@ -154,8 +146,6 @@
                 max="8"
                 required
               />
-            </fieldset>
-            <fieldset class="form__fieldset">
               <label for="date-time" class="form__label">Date & time *</label>
               <input
                 type="datetime-local"
@@ -163,8 +153,6 @@
                 id="date-time"
                 required
               />
-            </fieldset>
-            <fieldset class="form__fieldset">
               <label for="email" class="form__label">Your email *</label>
               <input
                 type="email"
@@ -173,12 +161,11 @@
                 placeholder="email@email.com"
                 required
               />
-            </fieldset>
-            <fieldset class="form__fieldset">
               <button type="submit" class="form__button">Book a table</button>
-            </fieldset>
-            <fieldset class="form__fieldset">
-              <label for="checkbox" class="form__label">
+              <label
+                for="checkbox"
+                class="form__label form__label_type_checkbox"
+              >
                 <input
                   type="checkbox"
                   class="form__checkbox"
@@ -292,7 +279,7 @@
         <section class="about" id="about">
           <h2 class="about__title">About the coffee shop</h2>
           <div class="about__circle"></div>
-          <div class="about__circle_animation_blurred"></div>
+          <div class="about__circle about__circle_animation_blurred"></div>
           <div class="about__content">
             <p class="about__paragraph">
               Our coffee shop is located in the Triple Peaks Library. It
