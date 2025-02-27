@@ -31,14 +31,6 @@
 }
 
 .nav__link:hover {
-  animation: fade 0.4s ease forwards;
-}
-
-@keyframes fade {
-  from {
-    opacity: 100%;
-  }
-  to {
-    opacity: 50%;
-  }
+  opacity: 50%;
+  transition: 0.4s;
 }

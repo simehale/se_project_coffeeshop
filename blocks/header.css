@@ -36,6 +36,7 @@
   line-height: 72px;
   letter-spacing: -0.6px;
   margin-top: 183px;
+  z-index: 1;
 }
 
 .header__description {
@@ -48,10 +49,10 @@
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 0;
+  z-index: 1;
 }
 
 .header__image {
-  z-index: 1;
   max-width: 646px;
   height: 568px;
   position: absolute;
@@ -78,11 +79,7 @@
   display: flex;
   font-weight: 500;
   padding: 0;
-  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
   color: #6f6f6f;
   margin-top: 0;
   margin-bottom: 0;
